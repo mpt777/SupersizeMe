@@ -26,7 +26,13 @@ In addition to the imputation of some data, I added a new categorical variable t
 The data scraped from the PDF's did not include the category of food each item belonged to. I built a function that would search for certain strings in the name of the item to classify which category it belongs to. 
 
 ### Exploritory Data Analysis
-Since the whole project is exploritory in nature, the actually EDA in the project is small. I used a pairplot to see how each of the features correlated with every other feature. The most interesting thing that can be gleamed from the graphs is the positive correlation that every feature has with every other feature. Some of the correltaions are weak, but they are still positive.
+Since the whole project is exploritory in nature, the actually EDA in the project is small. I used a pairplot to see how each of the features correlated with every other feature. The most interesting thing that can be gleamed from the graphs is the positive correlation that nearly every feature has with every other feature. Some of the correltaions are weak, but most are are still positive.
+
+This makes sense. As a food item gets larger it usually has more of everything, every nutrional feature.
+
+The only place where this relationship isn't true is the relationship between sugar and sodium. For both of these features, there are "two groupings" of data. The first group of data has an extremely positive slope, shooting off rapidly from the other points of data. The second group of data has a much less positive slope. A more interpretable way to approach this relationship, is to say that items have alot of sugar, a lot of sodium, or a small amount of each. Sodium and sugar have an extremely negative correlation together within this dataset.
+
+Since the majority of our dataset is a raw numerical value of a nutrional attribute paired with the corresponding daily percentage value, it is easy to assume that all of our datapoints are not independent. This is true. However, I ran this model without the daily percentage value columns and each model suffered a 3-10% loss of accuracy. This is why every column is included in the final model.
 
 ![](/pairplot.png)
 ## Methods

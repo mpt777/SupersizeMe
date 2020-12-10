@@ -27,7 +27,8 @@ The data scraped from the PDF's did not include the category of food each item b
 
 ### Exploritory Data Analysis
 Since the whole project is exploritory in nature, the actually EDA in the project is small. I used a pairplot to see how each of the features correlated with every other feature. The most interesting thing that can be gleamed from the graphs is the positive correlation that every feature has with every other feature. Some of the correltaions are weak, but they are still positive.
-/pairplot.png
+
+![](/pairplot.png)
 ## Methods
 
 

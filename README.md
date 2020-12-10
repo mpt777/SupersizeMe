@@ -23,7 +23,10 @@ Our Red Robin data did not include daily percentage points for each of the diffe
 
 In addition to the imputation of some data, I added a new categorical variable that labeled which resturant each of the items of food originated from.
 
-The data scraped from the PDF's did not include the category of food each item belonged to. I built a function taht would search for certain strings in the name of the item to classify which category it belongs to. 
+The data scraped from the PDF's did not include the category of food each item belonged to. I built a function that would search for certain strings in the name of the item to classify which category it belongs to. 
+
+### Exploritory Data Analysis
+Since the whole project is exploritory in nature, the actually EDA in the project is small. I used a pairplot to see how each of the features correlated with every other feature. The most interesting thing that can be gleamed from the graphs is the positive correlation that every feature has with every other feature. Some of the correltaions are weak, but they are still positive.
 
 ## Methods
 

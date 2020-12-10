@@ -10,6 +10,11 @@ Since the inspiration of the project came from my backpacking adventures, and my
   * McDonalds
   * In N Out
   * Red Robin
+  
 Since large chains of resturants are required to post their nutritional information in a standardized way, it meant the data collection was fairly easy. The data from McDonalds came from a kaggle dataset that I simply downloaded. The data for In N Out and Red Robin both came off PDF's from their respective websites. I've never scrapped data off of a PDF before, and I thought it would be a fun challenege to overcome. It turned out to be much more difficult that I first expected.
 
 To scrape the data off of the PDF's, I used the function read_pdf from the package tabula. Tabula's read_pdf creates a list of dataframes. These dataframes usually dont match dimensions, are missing data, and include overlapping data from otehr dataframes. This meant the cleaning process was rather tedious and difficult, especially for the Red Robin dataset.
+
+Of the largest issues I found was Tabula's tendency to combine rows of data into the same column. To combat this, I would shift data over in a dataframe to make space for the column that was combined. I woudl then need to split the contents of the column into 2, and then convert the columns into their correct data type.
+
+Our Red Robin data did not include daily percentage points for each of the different nutritional attributes. I used a KNN imputer to find these missing values. I chose this imputation method since the KNN model searches for similar rows in the dataset to choose their values. Since every resturant serves similar items of food, the KNN produced accurate results.

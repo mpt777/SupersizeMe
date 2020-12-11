@@ -129,13 +129,21 @@ This model was able to achieve an accuracy higher than any of their compisite pa
   * Precision Score: 0.8626825052881391
   
 [[13  0  0  0  0  0  0  0  0]
+
  [ 0 14  0  0  2  0  0  0  0]
+ 
  [ 0  0 18  2  0  0  0  0  0]
+ 
  [ 1  0  2  9  0  0  0  0  1]
+ 
  [ 0  3  0  0 46  0  0  0  0]
+ 
  [ 0  1  0  0  1  1  0  0  0]
+ 
  [ 2  0  0  0  0  0  5  0  0]
+ 
  [ 0  0  0  0  2  0  0  9  0]
+ 
  [ 2  0  0  1  1  0  0  0  6]]
 
 When we look at the confusion matrix, we can see that the last column (snacks and sides), is much better predicted.

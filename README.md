@@ -156,7 +156,6 @@ This model was able to achieve an accuracy higher than any of their compisite pa
 When we look at the confusion matrix, we can see that the last column (snacks and sides), is much better predicted.
 
 # Conclusion
-## Conclusion
 In conclusion, I would consider the SuperSize Me project a success. In this project, I was able to explore the menus and nutritional data of 3 of my most frequented resturants. From this nutritional data, I was able to build a few models to fairly accurately predict what type of food was being served based on the nutritional data that was contained within. Our models struggled with correclty classifying "Sides and Snacks", but was able to shine when given the right split of data. Our voting classifier was actually able to produce a result greater than its composite parts.
 
 With some more tuning, this model could be great at classifying a large dataset of nutritional data. If a researcher wanted to run an analysis on some uncategorized nutritional data, a model like this could aid them in the classification of their data. (Although a neural network or some unsupervised model migh be able to do this better and at a greater accuracy).

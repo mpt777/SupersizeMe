@@ -96,7 +96,7 @@ Our best models (Logistic Regression, K-Nearest Neighbors, and Support Vector Cl
  [ 0  1  0  0  1  0  0  0  0]\
  [ 2  0  0  0  0  0  6  0  0]\
  [ 0  0  0  0  3  0  0  9  0]\
- [ 1  0  2  0  0  0  0  0  4]]\
+ [ 1  0  2  0  0  0  0  0  4]]
  
 Like what was stated earlier, the lack of data in our model allowed for widely different accuracy scores based on the split of the data. If we used random state 2, both Random Forest and K-Nearest Neighbor have their accuracys well above 80%. Our best model from above, SVC, has it's accuracy dip down to 76%.
 
@@ -136,8 +136,11 @@ This model was able to achieve an accuracy higher than any of their compisite pa
  [ 0  1  0  0  1  1  0  0  0]\
  [ 2  0  0  0  0  0  5  0  0]\
  [ 0  0  0  0  2  0  0  9  0]\
- [ 2  0  0  1  1  0  0  0  6]]\
+ [ 2  0  0  1  1  0  0  0  6]]
 
 When we look at the confusion matrix, we can see that the last column (snacks and sides), is much better predicted.
 
 # Conclusion
+In conclusion
+
+### Limitations

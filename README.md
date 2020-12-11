@@ -128,7 +128,7 @@ This model was able to achieve an accuracy higher than any of their compisite pa
   * Recall Score:  0.852112676056338
   * Precision Score: 0.8626825052881391
   
-[[13  0  0  0  0  0  0  0  0] "\n"
+[[13  0  0  0  0  0  0  0  0] \n
  [ 0 14  0  0  2  0  0  0  0]
  [ 0  0 18  2  0  0  0  0  0]
  [ 1  0  2  9  0  0  0  0  1]

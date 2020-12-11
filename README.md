@@ -169,8 +169,8 @@ To reiterate what was mentioned in the weakness section of this report, the grea
 A model similar to this could be used by companies when 3d printed food becomes more widely available. Many of these machines take in raw components to print food. A model that takes raw nutritional data as inputs could pair nicely with a machine that does the same.
 
 # Data Credits
-In n Out - https://www.in-n-out.com/pdf/nutrition_2010.pdf
-Red Robin - https://www.redrobin.com/pages/nutrition/
+In n Out - https://www.in-n-out.com/pdf/nutrition_2010.pdf \
+Red Robin - https://www.redrobin.com/pages/nutrition/ \
 McDonalds - https://www.kaggle.com/mcdonalds/nutrition-facts
 
 

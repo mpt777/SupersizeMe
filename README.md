@@ -89,16 +89,16 @@ All of the models featured in my analysis are listed below, each with their rela
   
 Our best models (Logistic Regression, K-Nearest Neighbors, and Support Vector Classifier), all scored around 80%. This was lower than I originally anticipated. When I look at the confusion matrix for our best model (Support Vector Classifier), we can see that the our model really struggled with the last column in the matrix. That last column is our "Snacks and Sides" column. The category "snacks and sides" included the widest variety of food items. The category included salty fries and sweet pretzels. These two food items are vastly different. It is no suprise that our model struggled with classifying this type of food.
 
-(Here are the column names in order
-0 - Beef and Pork
-1 - beverages
-2 - Breakfast
-3 - Chicken and fish
-4 - Coffee and Tea
-5 - Desserts
-6 - Salads
-7 - Smoothies and shakes
-8 - Sides and Snacks
+(Here are the column names in order -\
+0 - Beef and Pork\
+1 - Beverages\
+2 - Breakfast\
+3 - Chicken and Fish\
+4 - Coffee and Tea\
+5 - Desserts\
+6 - Salads\
+7 - Smoothies and Shakes\
+8 - Sides and Snacks\
 )
 
 [[11  0  0  0  0  0  1  0  2]\
@@ -166,13 +166,3 @@ To reiterate what was mentioned in the weakness section of this report, the grea
 
 ## Tangent
 A model similar to this could be used by companies when 3d printed food becomes mre widely available. Many of these machine take in raw componets to print food. A model that takes raw nutritional data as inputs could pair nicely with a machine that does the same.
-
-0 - Beef and Pork
-1 - beverages
-2 - Breakfast
-3 - Chicken and fish
-4 - Coffee and Tea
-5 - Desserts
-6 - Salads
-7 - Smoothies and shakes
-8 - Sides and Snacks

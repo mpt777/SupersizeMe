@@ -47,7 +47,7 @@ Our model has a few strengths. First off, the model has plenty of features to wo
 The main weakness to my analysis is the lack of balanced data. We are just shy of 400 data entries. These 400 entries are split across 9 different categories of food. These categories of food are also extremely unbalanced, 1/4 of our entire dataset is just beverages.By changing the random state of X, y split, I am able to make some models 10 points better and others 10 points worse. It's not a good idea to have the accuracy of your models relient on the split that you get from your data. The more balanced and the more data you have, the better and robust a model is. If I were to redo this project, I would gather more data, and focus on balancing the data between the different categories.
 
 ### Model Performance
-
+#### Overview
 All of the models featured in my analysis are listed below, each with their relative Accuracy, F1, Precision, and Recall Scores. (Random state 713).
 
 * Decision Tree
@@ -98,6 +98,7 @@ Our best models (Logistic Regression, K-Nearest Neighbors, and Support Vector Cl
  [ 0  0  0  0  3  0  0  9  0]\
  [ 1  0  2  0  0  0  0  0  4]]
  
+#### Different Random States
 Like what was stated earlier, the lack of data in our model allowed for widely different accuracy scores based on the split of the data. If we used random state 2, both Random Forest and K-Nearest Neighbor have their accuracys well above 80%. Our best model from above, SVC, has it's accuracy dip down to 76%.
 
 * Random Forest
@@ -117,7 +118,8 @@ Like what was stated earlier, the lack of data in our model allowed for widely d
   * F1 Score : 0.7567580291021508
   * Precision Score :  0.7631443204682641
   * Recall Score :  0.7676056338028169
-  
+ 
+#### Voting Classifier
 To finish everything off, I decided to make a voting classifier model to hopdefully combat the lack of balanced data. In this model, I used the best individual models from our random state 2 run (KNN, Logistic Regression, Gradient Boosting, and Random Forest).
 
 This model was able to achieve an accuracy higher than any of their compisite parts.
@@ -141,6 +143,13 @@ This model was able to achieve an accuracy higher than any of their compisite pa
 When we look at the confusion matrix, we can see that the last column (snacks and sides), is much better predicted.
 
 # Conclusion
-In conclusion
+## Conclusion
+In conclusion, I would consider the SuperSize Me project a success. In this project, I was able to explore the menus and nutritional data of 3 of my most frequented resturants. From this nutritional data, I was able to build a few models to fairly accurately predict what type of food was being served based on the nutritional data that was contained within. Our models struggled with correclty classifying "Sides and Snacks", but was able to shine when given the right split of data. Our voting classifier was actually able to produce a result greater than its composite parts.
 
-### Limitations
+With some more tuning, this model could be great at classifying a large dataset of nutritional data. If a researcher wanted to run an analysis on some uncategorized nutritional data, a model like this could aid them in the classification of their data. (Although a neural network or some unsupervised model migh be able to do this better and at a greater accuracy).
+
+## Limitations
+To reiterate what was mentioned in the weakness section of this report, the greatest limitation to this project was the data. The model was only fed 400 or so entries. These 400 entries were then split amoung 9 unbalanced classifications. If more data was cleaned and collected, then our model would be able to predict much more accurately. Not only would the model accuracy be better, but the model would also be more robust, making it less susceptible to differences in the random state of the X y split.
+
+## Tangent
+A model similar to this could be used by companies when 3d printed food becomes mre widely available. Many of these machine take in raw componets to print food. A model that takes raw nutritional data as inputs could pair nicely with a machine that does the same.

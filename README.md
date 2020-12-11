@@ -4,6 +4,7 @@
 The original idea for the project came to me during my experiences backpacking. I've eaten at plenty of Ma and Pa resturants after a long week of hiking. Usually, These resturants are not required to post their nutritional data for the food that they serve, due to their small business size. I originally planned on building a model that would take catagorical attributes about the food (such as they type of food, serving size, and comparable resturants), and return the predicted nutritional data. This approach wouldn't be very accurate given the limited number of features, and the many targets that I hoped to predict. In the end, I decided that simply looking up a similar food item for it's nutritional data online would've been the simplier and more logical approach. The project then pivoted. In this new model, I would take all of the nutritional data about a food item, and precict what type/category a food item belonged to.
 
 The purpose of this model is explore the similarities and differences between the foods we get at resturants. If we supply a machine learning model with all of the nutritional facts of a piece of food, as well as the resturant that the item came from, can it correctly predict what category of food that we purchased (ie, Hamburger, shake, fries, etc).
+A model like this could be helpful for a researcher who would like to run a data analysis on a set comprised of uncategorized nutritional data. Our model could go through and categorized the food in the dataset automatically for them.
 
 ## Data
 ### Collection and Cleaning
@@ -88,6 +89,18 @@ All of the models featured in my analysis are listed below, each with their rela
   
 Our best models (Logistic Regression, K-Nearest Neighbors, and Support Vector Classifier), all scored around 80%. This was lower than I originally anticipated. When I look at the confusion matrix for our best model (Support Vector Classifier), we can see that the our model really struggled with the last column in the matrix. That last column is our "Snacks and Sides" column. The category "snacks and sides" included the widest variety of food items. The category included salty fries and sweet pretzels. These two food items are vastly different. It is no suprise that our model struggled with classifying this type of food.
 
+(Here are the column names in order
+0 - Beef and Pork
+1 - beverages
+2 - Breakfast
+3 - Chicken and fish
+4 - Coffee and Tea
+5 - Desserts
+6 - Salads
+7 - Smoothies and shakes
+8 - Sides and Snacks
+)
+
 [[11  0  0  0  0  0  1  0  2]\
  [ 0 16  0  0  2  0  0  0  0]\
  [ 0  0 21  0  0  0  0  0  2]\
@@ -153,3 +166,13 @@ To reiterate what was mentioned in the weakness section of this report, the grea
 
 ## Tangent
 A model similar to this could be used by companies when 3d printed food becomes mre widely available. Many of these machine take in raw componets to print food. A model that takes raw nutritional data as inputs could pair nicely with a machine that does the same.
+
+0 - Beef and Pork
+1 - beverages
+2 - Breakfast
+3 - Chicken and fish
+4 - Coffee and Tea
+5 - Desserts
+6 - Salads
+7 - Smoothies and shakes
+8 - Sides and Snacks

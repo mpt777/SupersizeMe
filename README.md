@@ -43,10 +43,10 @@ For this problem I wanted to try as many models as I could since sklearn makes i
 All of the models featured in my analysis are listed below, each with their relative Accuracy, F1, Precision, and Recall Scores.
 
  * Decision Tree
-  - Accuracy Score : 0.6971830985915493
-  - F1 Score : 0.7013347116034743
-  - Precision Score :  0.7191855380649912
-  - Recall Score :  0.6971830985915493
+ - Accuracy Score : 0.6971830985915493
+ - F1 Score : 0.7013347116034743
+ - Precision Score :  0.7191855380649912
+ - Recall Score :  0.6971830985915493
 
  Random Forest
   -Accuracy Score : 0.7676056338028169

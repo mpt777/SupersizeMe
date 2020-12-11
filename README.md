@@ -88,15 +88,15 @@ All of the models featured in my analysis are listed below, each with their rela
   
 Our best models (Logistic Regression, K-Nearest Neighbors, and Support Vector Classifier), all scored around 80%. This was lower than I originally anticipated. When I look at the confusion matrix for our best model (Support Vector Classifier), we can see that the our model really struggled with the last column in the matrix. That last column is our "Snacks and Sides" column. The category "snacks and sides" included the widest variety of food items. The category included salty fries and sweet pretzels. These two food items are vastly different. It is no suprise that our model struggled with classifying this type of food.
 
-[[11  0  0  0  0  0  1  0  2]
- [ 0 16  0  0  2  0  0  0  0]
- [ 0  0 21  0  0  0  0  0  2]
- [ 0  0  1 14  0  0  0  0  1]
- [ 0  6  0  0 35  0  0  1  0]
- [ 0  1  0  0  1  0  0  0  0]
- [ 2  0  0  0  0  0  6  0  0]
- [ 0  0  0  0  3  0  0  9  0]
- [ 1  0  2  0  0  0  0  0  4]]
+[[11  0  0  0  0  0  1  0  2]\
+ [ 0 16  0  0  2  0  0  0  0]\
+ [ 0  0 21  0  0  0  0  0  2]\
+ [ 0  0  1 14  0  0  0  0  1]\
+ [ 0  6  0  0 35  0  0  1  0]\
+ [ 0  1  0  0  1  0  0  0  0]\
+ [ 2  0  0  0  0  0  6  0  0]\
+ [ 0  0  0  0  3  0  0  9  0]\
+ [ 1  0  2  0  0  0  0  0  4]]\
  
 Like what was stated earlier, the lack of data in our model allowed for widely different accuracy scores based on the split of the data. If we used random state 2, both Random Forest and K-Nearest Neighbor have their accuracys well above 80%. Our best model from above, SVC, has it's accuracy dip down to 76%.
 
@@ -128,15 +128,15 @@ This model was able to achieve an accuracy higher than any of their compisite pa
   * Recall Score:  0.852112676056338
   * Precision Score: 0.8626825052881391
   
-[[13  0  0  0  0  0  0  0  0] \n
- [ 0 14  0  0  2  0  0  0  0]
- [ 0  0 18  2  0  0  0  0  0]
- [ 1  0  2  9  0  0  0  0  1]
- [ 0  3  0  0 46  0  0  0  0]
- [ 0  1  0  0  1  1  0  0  0]
- [ 2  0  0  0  0  0  5  0  0]
- [ 0  0  0  0  2  0  0  9  0]
- [ 2  0  0  1  1  0  0  0  6]]
+[[13  0  0  0  0  0  0  0  0]\
+ [ 0 14  0  0  2  0  0  0  0]\
+ [ 0  0 18  2  0  0  0  0  0]\
+ [ 1  0  2  9  0  0  0  0  1]\
+ [ 0  3  0  0 46  0  0  0  0]\
+ [ 0  1  0  0  1  1  0  0  0]\
+ [ 2  0  0  0  0  0  5  0  0]\
+ [ 0  0  0  0  2  0  0  9  0]\
+ [ 2  0  0  1  1  0  0  0  6]]\
 
 When we look at the confusion matrix, we can see that the last column (snacks and sides), is much better predicted.
 

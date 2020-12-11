@@ -33,7 +33,7 @@ Since the whole project is exploratory in nature, the actual EDA in the project 
 
 This makes sense. As a food item gets larger it usually has more of everything, every nutritional feature.
 
-The only place where this relationship isn't true is the relationship between sugar and sodium. For both of these features, there are "two groupings'' of data. The first group of data has an extremely positive slope, shooting off rapidly from the other points of data. The second group of data has a much less positive slope. A more interpretable way to approach this relationship, is to say that items have a lot of sugar, a lot of sodium, or a small amount of each. Sodium and sugar have an extremely negative correlation together within this dataset.
+The only place where this relationship isn't true is the relationship between sugar and sodium. For both of these features, there are "two groupings'' of data. The first group of data has an extremely positive slope, shooting off rapidly from the other points of data. The second group of data has a much less positive slope. A more interpretable way to approach this relationship, is to say that items have a lot of sugar, a lot of sodium, or a small amount of each.
 
 Since the majority of our dataset is a raw numerical value of a nutritional attribute paired with the corresponding daily percentage value, it is easy to assume that all of our data points are not independent. This is true. However, I ran this model without the daily percentage value columns and each model suffered a 3-10% loss of accuracy. This is why every column is included in the final model.
 

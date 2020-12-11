@@ -40,7 +40,15 @@ Since the majority of our dataset is a raw numerical value of a nutrional attrib
 ### Model Overview
 For this problem I wanted to try as many models as I could since sklearn makes it so easy to test models. I had particular hope for K-Nearest Neighbor Model and the Support Vector Classifier. Since every item within a category of food shoud be similar to one another, models that plot and split data within an euclidian distance should fair well. I also had particular hope for the Logistic Regression, since it was the first machine learning model I ever used. 
 
-All of the models featured in my analysis are listed below, each with their relative Accuracy, F1, Precision, and Recall Scores.
+### Strengths and Weaknesses
+#### Strengths
+Our model has a few strengths. First off, the model has plenty of features to work with. The model has 25 features to predict a single classification. Second, the model itself is very fast and lightweight to run. Since there isn't alot of data to process, each individual model takes less than a second to compute. Each model is also better at making predictions than a blind guess.
+#### Weaknesses
+The main weakness to my analysis is the lack of balanced data. We are just shy of 400 data entries. These 400 entries are split across 9 different categories of food. These categories of food are also extremely unbalanced, 1/4 of our entire dataset is just beverages.By changing the random state of X, y split, I am able to make some models 10 points better and others 10 points worse. It's not a good idea to have the accuracy of your models relient on the split that you get from your data. The more balanced and the more data you have, the better and robust a model is. If I were to redo this project, I would gather more data, and focus on balancing the data between the different categories.
+
+### Model Performance
+
+All of the models featured in my analysis are listed below, each with their relative Accuracy, F1, Precision, and Recall Scores. (Random state 713).
 
 * Decision Tree
   * Accuracy Score : 0.6971830985915493
@@ -66,22 +74,70 @@ All of the models featured in my analysis are listed below, each with their rela
   * Precision Score :  0.7791710791062163
   * Recall Score :  0.7816901408450704
 
-* Fitting KNN
+* K-Nearest Neighbor
   * Accuracy Score : 0.7816901408450704
   * F1 Score : 0.7821055600079996
   * Precision Score :  0.7932466008170234
   * Recall Score :  0.7816901408450704
 
-* Fitting SVC
+* Support Vector Classifier
   * Accuracy Score : 0.8169014084507042
   * F1 Score : 0.8146139005328851
   * Precision Score :  0.8187933213751699
   * Recall Score :  0.8169014084507042
+  
+Our best models (Logistic Regression, K-Nearest Neighbors, and Support Vector Classifier), all scored around 80%. This was lower than I originally anticipated. When I look at the confusion matrix for our best model (Support Vector Classifier), we can see that the our model really struggled with the last column in the matrix. That last column is our "Snacks and Sides" column. The category "snacks and sides" included the widest variety of food items. The category included salty fries and sweet pretzels. These two food items are vastly different. It is no suprise that our model struggled with classifying this type of food.
 
-Our best models (Logistic Regression, K-Nearest Neighbors, and Support Vector Classifier), all scored around 80%. This was lower than I originally anticipated
+[[11  0  0  0  0  0  1  0  2]
+ [ 0 16  0  0  2  0  0  0  0]
+ [ 0  0 21  0  0  0  0  0  2]
+ [ 0  0  1 14  0  0  0  0  1]
+ [ 0  6  0  0 35  0  0  1  0]
+ [ 0  1  0  0  1  0  0  0  0]
+ [ 2  0  0  0  0  0  6  0  0]
+ [ 0  0  0  0  3  0  0  9  0]
+ [ 1  0  2  0  0  0  0  0  4]]
+ 
+Like what was stated earlier, the lack of data in our model allowed for widely different accuracy scores based on the split of the data. If we used random state 2, both Random Forest and K-Nearest Neighbor have their accuracys well above 80%. Our best model from above, SVC, has it's accuracy dip down to 76%.
 
-### Strengths and Weaknesses
+* Random Forest
+  * Accuracy Score : 0.8450704225352113
+  * F1 Score : 0.8401488754999525
+  * Precision Score :  0.8641574481973572
+  * Recall Score :  0.8450704225352113
 
-### Model Performance
+* Fitting KNN
+  * Accuracy Score : 0.8380281690140845
+  * F1 Score : 0.8372895552390167
+  * Precision Score :  0.8455404771248752
+  * Recall Score :  0.8380281690140845
+  
+* Fitting SVC
+  * Accuracy Score : 0.7676056338028169
+  * F1 Score : 0.7567580291021508
+  * Precision Score :  0.7631443204682641
+  * Recall Score :  0.7676056338028169
+  
+To finish everything off, I decided to make a voting classifier model to hopdefully combat the lack of balanced data. In this model, I used the best individual models from our random state 2 run (KNN, Logistic Regression, Gradient Boosting, and Random Forest).
+
+This model was able to achieve an accuracy higher than any of their compisite parts.
+
+* Voting Classifier
+  * Accuracy Score:  0.852112676056338
+  * F1 Score:  0.8476444832659763
+  * Recall Score:  0.852112676056338
+  * Precision Score: 0.8626825052881391
+  
+[[13  0  0  0  0  0  0  0  0]
+ [ 0 14  0  0  2  0  0  0  0]
+ [ 0  0 18  2  0  0  0  0  0]
+ [ 1  0  2  9  0  0  0  0  1]
+ [ 0  3  0  0 46  0  0  0  0]
+ [ 0  1  0  0  1  1  0  0  0]
+ [ 2  0  0  0  0  0  5  0  0]
+ [ 0  0  0  0  2  0  0  9  0]
+ [ 2  0  0  1  1  0  0  0  6]]
+
+When we look at the confusion matrix, we can see that the last column (snacks and sides), is much better predicted.
 
 # Conclusion

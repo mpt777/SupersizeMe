@@ -1,4 +1,6 @@
 # SupersizeMe
+#### Marshal Taylor
+#### Supporting Code found in SuperSizeMe.ipynb
 
 ## Background
 The original idea for the project came to me during my experiences backpacking. I've eaten at plenty of Ma and Pa restaurants after a long week of hiking. Usually, These restaurants are not required to post their nutritional data for the food that they serve, due to their small business size. I originally planned on building a model that would take categorical attributes about the food (such as the type of food, serving size, and comparable restaurants), and return the predicted nutritional data. This approach wouldn't be very accurate given the limited number of features, and the many targets that I hoped to predict. In the end, I decided that simply looking up a similar food item for it's nutritional data online would've been the simpler and more logical approach. The project then pivoted. In this new model, I would take all of the nutritional data about a food item, and predict what type/category a food item belonged to.

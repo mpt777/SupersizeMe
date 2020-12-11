@@ -44,39 +44,39 @@ All of the models featured in my analysis are listed below, each with their rela
 
 * Decision Tree
   * Accuracy Score : 0.6971830985915493
- - F1 Score : 0.7013347116034743
- - Precision Score :  0.7191855380649912
- - Recall Score :  0.6971830985915493
+  * F1 Score : 0.7013347116034743
+  * Precision Score :  0.7191855380649912
+  * Recall Score :  0.6971830985915493
 
- Random Forest
-  -Accuracy Score : 0.7676056338028169
-  -F1 Score : 0.7587853406556322
-  -Precision Score :  0.7724775553908244
-  -Recall Score :  0.7676056338028169
+* Random Forest
+  * Accuracy Score : 0.7676056338028169
+  * F1 Score : 0.7587853406556322
+  * Precision Score :  0.7724775553908244
+  * Recall Score :  0.7676056338028169
 
-Gradient Boosting
-Accuracy Score : 0.7464788732394366
-F1 Score : 0.7421122806316535
-Precision Score :  0.7484092498251924
-Recall Score :  0.7464788732394366
+* Gradient Boosting
+  * Accuracy Score : 0.7464788732394366
+  * F1 Score : 0.7421122806316535
+  * Precision Score :  0.7484092498251924
+  * Recall Score :  0.7464788732394366
 
-Fitting Logistic Regression
-Accuracy Score : 0.7816901408450704
-F1 Score : 0.7696559800064551
-Precision Score :  0.7791710791062163
-Recall Score :  0.7816901408450704
+* Logistic Regression
+  * Accuracy Score : 0.7816901408450704
+  * F1 Score : 0.7696559800064551
+  * Precision Score :  0.7791710791062163
+  * Recall Score :  0.7816901408450704
 
-Fitting KNN
-Accuracy Score : 0.7816901408450704
-F1 Score : 0.7821055600079996
-Precision Score :  0.7932466008170234
-Recall Score :  0.7816901408450704
+* Fitting KNN
+  * Accuracy Score : 0.7816901408450704
+  * F1 Score : 0.7821055600079996
+  * Precision Score :  0.7932466008170234
+  * Recall Score :  0.7816901408450704
 
-Fitting SVC
-Accuracy Score : 0.8169014084507042
-F1 Score : 0.8146139005328851
-Precision Score :  0.8187933213751699
-Recall Score :  0.8169014084507042
+* Fitting SVC
+  * Accuracy Score : 0.8169014084507042
+  * F1 Score : 0.8146139005328851
+  * Precision Score :  0.8187933213751699
+  * Recall Score :  0.8169014084507042
 
 Our best models (Logistic Regression, K-Nearest Neighbors, and Support Vector Classifier), all scored around 80%. This was lower than I originally anticipated
 
